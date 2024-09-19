@@ -1,0 +1,41 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract GSTCalculator {
+    struct Transaction {
+        uint taxableAmount;
+        string item;
+        uint amountPaid;
+        string origin;
+        string destination;
+        uint cgst;
+        uint sgst;
+        uint igst;
+    }
+
+    mapping(address => Transaction) public transactions;
+
+    function calculateGST(uint _taxableAmount, string memory _item, uint _amountPaid, string memory _origin, string memory _destination) public {
+        uint cgst;
+        uint sgst;
+        uint igst;
+
+        
+        uint gstRate = 18; 
+        cgst = (_taxableAmount * gstRate) / 200;
+        sgst = cgst;
+
+        if (keccak256(bytes(_origin)) == keccak256(bytes(_destination))) {
+            
+            transactions[msg.sender] = Transaction(_taxableAmount, _item, _amountPaid, _origin, _destination, cgst, sgst, 0);
+        } else {
+           
+            igst = (_taxableAmount * gstRate) / 100;
+            transactions[msg.sender] = Transaction(_taxableAmount, _item, _amountPaid, _origin, _destination, 0, 0, igst);
+        }
+    }
+
+    function getTransaction() public view returns(Transaction memory) {
+        return transactions[msg.sender];
+    }
+}
