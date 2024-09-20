@@ -4,6 +4,10 @@ GST and Letter of Credit Transaction with Escrow Services
 Overview
 This solution is designed to address issues in traditional GST and LC transactions, such as trust deficits, payment delays, and processing errors. By leveraging blockchain technology, 
 it creates a decentralized platform where payments are held securely in escrow until the contract conditions are fulfilled. The system also enhances the reliability of the GST portal and improves transaction security by verifying buyer’s bank credit ratings.
+<img align="center" src="https://github.com/Aayush63777/web-meet/blob/main/public/css/meet.png">
+<br>
+
+<img align="center" src="https://github.com/Aayush63777/web-meet/blob/main/public/css/meet 2.png">
 
 Key Features
 Blockchain-Based Finance System: Developed using Solidity, Web3.js, React.js, Node.js, and Metamask, the system enables secure, automated transactions for advance and installment payments.
