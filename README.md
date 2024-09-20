@@ -1,6 +1,5 @@
-                                                                              GST and Letter of Credit Transaction with Escrow Services
+GST and Letter of Credit Transaction with Escrow Services                                                                         
 
-his project implements a blockchain-based finance system to streamline GST and Letter of Credit (LC) transactions, focusing on improving payment security and reliability through smart contracts and an integrated escrow service.
 
 Overview
 This solution is designed to address issues in traditional GST and LC transactions, such as trust deficits, payment delays, and processing errors. By leveraging blockchain technology, 
