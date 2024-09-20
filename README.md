@@ -30,7 +30,9 @@ GST Processing: Payments are securely processed with improved portal reliability
 Credit Verification: Buyer’s bank ratings are verified to ensure they meet the required standards, reducing the risk of non-payment.
 
 Contributing
+
 Contributions are welcome! Please fork this repository and submit a pull request for any features, improvements, or bug fixes.
 
 License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
